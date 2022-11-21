@@ -12,8 +12,7 @@ class TestDateRepr(TestCase):
         from package.my_module import date_repr
 
         d1 = date(2022, 9, 1)
-        answers = ('четверг 1 сентября 2022', 'четверг 01 сентября 2022')
-        self.assertIn(date_repr(d1), answers)
+        self.assertIn(date_repr(d1), 'четверг 1 сентября 2022 года')
 
         d2 = date(2020, 2, 29)
-        self.assertEqual(date_repr(d2), 'пятница 29 февраля 2020')
+        self.assertEqual(date_repr(d2), 'пятница 29 февраля 2020 года')
