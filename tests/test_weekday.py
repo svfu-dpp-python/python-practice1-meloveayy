@@ -2,7 +2,7 @@ from unittest import TestCase
 
 
 class TestWeekday(TestCase):
-    def test_week(self):
+    def test_weekday(self):
         from package.subpackage.my_module2 import weekday
 
         self.assertEqual(weekday(1), 'понедельник')
