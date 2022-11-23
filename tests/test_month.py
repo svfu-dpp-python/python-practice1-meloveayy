@@ -3,7 +3,7 @@ from unittest import TestCase
 
 class TestMonth(TestCase):
     def test_month(self):
-        from package.subpackage.my_module2 import month
+        from package.sub_package.my_module2 import month
 
         self.assertEqual(month(1), 'января')
         self.assertEqual(month(2), 'февраля')
