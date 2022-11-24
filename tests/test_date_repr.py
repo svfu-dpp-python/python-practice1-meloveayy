@@ -15,4 +15,4 @@ class TestDateRepr(TestCase):
         self.assertIn(date_repr(d1), 'четверг 1 сентября 2022 года')
 
         d2 = date(2020, 2, 29)
-        self.assertEqual(date_repr(d2), 'пятница 29 февраля 2020 года')
+        self.assertEqual(date_repr(d2), 'суббота 29 февраля 2020 года')
